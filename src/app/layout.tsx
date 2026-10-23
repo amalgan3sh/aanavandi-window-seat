@@ -1,9 +1,21 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
+const description = 'A rainy Kerala bus ride in 3D. Every stop is a focus session and the conductor calls your break.';
+
+// the preview image itself is src/app/opengraph-image.jpg (picked up by Next.js)
 export const metadata: Metadata = {
+  metadataBase: new URL('https://aanavandi-window-seat.vercel.app'),
   title: 'Aanavandi Window Seat',
-  description: 'A rainy Kerala bus ride in 3D. Every stop is a focus session and the conductor calls your break.',
+  description,
+  openGraph: {
+    title: 'ആനവണ്ടി · Window Seat',
+    description,
+    siteName: 'Aanavandi Window Seat',
+    type: 'website',
+    locale: 'en_IN',
+  },
+  twitter: { card: 'summary_large_image', title: 'ആനവണ്ടി · Window Seat', description },
 };
 
 export const viewport: Viewport = {
