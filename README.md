@@ -61,3 +61,11 @@ The engine is plain Three.js (0.160) behind a small class API, loaded with a dyn
 - Run `npm run voice` so the conductor speaks real Malayalam on every device.
 - Replace synthesised sounds with real recordings from a bus ride for the biggest jump in realism.
 - Keep the name and art clear of KSRTC's logo and trademarks.
+
+## Contributing
+
+Pull requests are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md) for setup, house rules and ideas to pick up. `main` is protected, so every change goes through a reviewed PR with passing CI.
+
+## License
+
+[MIT](LICENSE) © Amal Ganesh
